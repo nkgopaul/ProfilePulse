@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+/* Font Declaration */
+@font-face {
+    font-family: 'ProximaNova';
+    src: url(../fonts/ProximaNova-Regular.otf);
+}
+
+/* Body style */
+body {
+	margin: 0;
+    padding: 0;
+}
+/* Navigation bar style */
+nav {
+	text-align: center;
+	background-color: white;
+	opacity: 0.7;
+	font-family: ProximaNova;
+}
+
+nav .pull-left {
+	color: #FFF;
+	font-size: 20px;
+	font-weight: bold;
+  	padding: 10px 10px;
+  	padding-bottom: 0;
+}
+
+nav .pull-right {
+	color: #FFF;
+	font-size: 15px;
+	font-weight: bold;
+  	padding: 14px 10px;
+  	padding-bottom: 0;
+}
+
+nav a {
+	color: black;
+}
+
+nav ul li {
+  	display: inline;
+  	color: white;
+  	padding-left: 15px;
+}
+
+nav a:hover {
+	color: #003399;
+	text-decoration: none;
+}
+
+nav a:active {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/*Content style*/
+
+.mainpage {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-top: -142px;
+}
+
+.mainpage:after {
+  content: "";
+  display: block;
+}
+
+body {
+	background-color: #FFF;
+}
+
+.title-page {
+	width: 100%;
+	height: 500px;
+	background-image: url(../img/pulse.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+	.overlay {
+		width: 100%;
+		height: 500px;
+		background-color: black;
+		opacity: 0.7;
+	}
+
+	.title-page h1 {
+		text-align: center;
+		font-family: ProximaNova, Helvetica, sans-serif;
+		font-size: 60px;
+		color: black;
+		padding-top: 300px;
+	  	color: #FFF;
+	}
+
+.content {
+	text-align:center;
+	position: relative;
+  height: 500px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+
+ 	.handle_submission {
+    font-size: 16px;
+ 		font-family: ProximaNova;
+    display: block;
+    padding-top: 20px
+  }
+
+  .graph {
+    font-family: ProximaNova;
+  }
+
+  .bars {
+    fill:#41f4f4
+  }
+
+  .bars:hover {
+    fill:#4268f4
+  }
+
+/*Footer style*/
+
+footer {
+	text-align: center;
+	padding-top: 40px;
+}
+
+footer, .mainpage:after {
+}
+
+footer p {
+	color: #A3A3C2;
+}
+
+#email {
+	color: #A3A3C2;
+}
+
+#email:hover {
+	color: #333399;;
+}
+
+#linkedin {
+	color: #A3A3C2;
+}
+
+#linkedin:hover {
+	color: #333399;;
+}
+
+#github {
+	color: #A3A3C2;
+}
+
+#github:hover {
+	color: #333399;;
+}

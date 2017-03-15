@@ -1,0 +1,14 @@
+{
+  "name": "profilepulse",
+  "version": "1.0.0",
+  "description": "Determine the sentiment of a specific user using recent tweets and natural language processing",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "author": "Navin Gopaul",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1"
+  }
+}
