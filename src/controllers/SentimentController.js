@@ -19,7 +19,3 @@ module.exports.analyzeTweets = function(req, res) {
       .catch(error);
   });
 }
-//
-// module.exports.test = function(req, res) {
-//
-// }
