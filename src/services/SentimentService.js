@@ -14,7 +14,7 @@ function indexOfMax (arr) {
     return maxIndex;
 }
 
-module.exports.reduceInput = (analysis, tweets) => {
+module.exports.reduceInput = (analysis, tweetIds) => {
   var anger = analysis.map((a) => (a.anger));
   var joy = analysis.map((a) => (a.joy));
   var sadness = analysis.map((a) => (a.sadness));
@@ -24,23 +24,23 @@ module.exports.reduceInput = (analysis, tweets) => {
   var response = {
     "angry": {
       "sum": anger.reduce(function(a, b) { return a + b; }, 0),
-      "strongestTweet": tweets[indexOfMax(anger)]
+      "strongestTweet": tweetIds[indexOfMax(anger)]
     },
     "joy": {
       "sum": joy.reduce(function(a, b) { return a + b; }, 0),
-      "strongestTweet": tweets[indexOfMax(joy)]
+      "strongestTweet": tweetIds[indexOfMax(joy)]
     },
     "sadness": {
       "sum": sadness.reduce(function(a, b) { return a + b; }, 0),
-      "strongestTweet": tweets[indexOfMax(sadness)]
+      "strongestTweet": tweetIds[indexOfMax(sadness)]
     },
     "fear": {
       "sum": fear.reduce(function(a, b) { return a + b; }, 0),
-      "strongestTweet": tweets[indexOfMax(fear)]
+      "strongestTweet": tweetIds[indexOfMax(fear)]
     },
     "surprise": {
       "sum": surprise.reduce(function(a, b) { return a + b; }, 0),
-      "strongestTweet": tweets[indexOfMax(surprise)]
+      "strongestTweet": tweetIds[indexOfMax(surprise)]
     }
   };
   return response;

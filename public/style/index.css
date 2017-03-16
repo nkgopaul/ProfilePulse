@@ -102,24 +102,35 @@ body {
 	  	color: #FFF;
 	}
 
+  .handle_submission {
+    font-size: 16px;
+  	font-family: ProximaNova;
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+  }
+
 .content {
 	text-align:center;
 	position: relative;
   height: 500px;
   padding-right: 50px;
   padding-left: 50px;
+  display: block;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
-
- 	.handle_submission {
-    font-size: 16px;
- 		font-family: ProximaNova;
-    display: block;
-    padding-top: 20px
+  .graphcontent {
+  	position: relative;
+    height: 500px;
+    padding-top: 20px;
   }
 
   .graph {
     font-family: ProximaNova;
+    position: relative;
   }
 
   .bars {
@@ -129,6 +140,22 @@ body {
   .bars:hover {
     fill:#4268f4
   }
+.tweetcontainer {
+
+}
+  #tweet {
+    padding-top: 100px;
+    padding-left: 100px;
+    width: 400px !important;
+  }
+
+  #tweet iframe {
+    padding-top: 100px;
+    padding-left: 100px;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
 
 /*Footer style*/
 

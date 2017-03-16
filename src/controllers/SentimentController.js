@@ -6,31 +6,20 @@ module.exports.analyzeTweets = function(req, res) {
     screen_name: req.params.handle
   }
   var batchInput = [];
+  var tweetIds = [];
   config.client.get('statuses/user_timeline', search_params, function(error, tweets, response) {
-    console.log(tweets);
     for(var i = 0; i < tweets.length; i++) {
       batchInput.push(tweets[i].text);
+      tweetIds.push(tweets[i].id_str);
     }
     config.indico.emotion(batchInput)
       .then((analysis) => {
-        console.log(analysis);
-        res.send(SentimentService.reduceInput(analysis, batchInput));
+        res.send(SentimentService.reduceInput(analysis, tweetIds));
       })
       .catch(error);
   });
 }
-//get strongest tweet for each emotion
-//sum up values for all emotions and isplay it on a graph
-
-// stream_params = {
-//   locations: '-74,40,-73,41'
-// }
-// config.client.stream('statuses/filter', stream_params, function(stream) {
-//   stream.on('data', function(event) {
-//     console.log(event.text);
-//   });
 //
-//   stream.on('error', function(error) {
-//     throw error;
-//   });
-// });
+// module.exports.test = function(req, res) {
+//
+// }

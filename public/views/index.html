@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> <!-- font awesome -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script sync src="https://platform.twitter.com/widgets.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <meta charset=utf-8 />
     <link rel="stylesheet" href="style/index.css">
@@ -32,10 +33,14 @@
           <h1>Profile Pulse</h1>
         </div>
       </div>
+      <div class="handle_submission">
+        <input id="handle_input" type="text" placeholder="Enter handle" /><br/>
+        <button id="submit" type="submit">Analyze</button>
+      </div>
       <ul class="content">
-        <li class="handle_submission">
-          <input id="handle_input" type="text" placeholder="Enter handle" /><br/>
-          <button id="submit" type="submit">Analyze</button>
+        <li class="tweetcontent">
+        </li>
+        <li class="graphcontent">
         </li>
       </ul>
     </div>
